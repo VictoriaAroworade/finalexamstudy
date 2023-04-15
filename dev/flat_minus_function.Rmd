@@ -1,0 +1,89 @@
+---
+title: "flat_minus_function.Rmd empty"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r development, include=FALSE}
+library(testthat)
+```
+
+```{r development-load}
+# Load already included functions if relevant
+pkgload::load_all(export_all = FALSE)
+```
+
+# My function
+
+```{r function-minus_function}
+#' My Minus Function
+#'
+#'This function subtracts 3 numbers from an inputted value
+#'
+#'@param x is a numeric value
+#'
+#' @return this returns x - 3
+#' 
+#' @export
+#'
+#' @examples
+minus_function <- function(x) {
+  if(isFALSE(is.numeric(x))) {
+    stop("The argument `x` must be a number.")
+  }
+  
+  result <- (x - 3)
+  return(result)
+  
+}
+```
+
+```{r development-minus_function}
+minus_function <- function(x) {
+  if(isFALSE(is.numeric(x))) {
+    stop("The argument `x` must be a number.")
+  }
+  
+  result <- (x - 3)
+  return(result)
+  
+}
+
+minus_function(9)
+minus_function("9")
+
+```
+
+```{r examples-minus_function}
+# An input of 5 should be 2
+minus_function(5)
+
+# An input of 7 should be 4
+minus_function(7)
+
+# An input of 10 should be 7
+minus_function(10)
+```
+
+```{r tests-minus_function}
+test_that("minus_function works", {
+  expect_equal(
+    object = minus_function(x = 5),
+    expected = 2
+  )
+  
+  expect_error(
+    object = minus_function(x = "5"),
+    regexp = ("The argument `x` must be a number.")
+  )
+})
+```
+
+
+```{r development-inflate, eval=FALSE}
+# Run but keep eval=FALSE to avoid infinite loop
+# Execute in the console directly
+fusen::inflate(flat_file = "dev/flat_minus_function.Rmd", vignette_name = "My Minus Function")
+```
+
