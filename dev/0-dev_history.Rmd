@@ -14,10 +14,10 @@ All commands that you use to use when developing packages...
 ```{r description, eval=FALSE}
 # Describe your package
 fusen::fill_description(
-  pkg = here::here(),
+  pkg = here::here(), overwrite = TRUE,
   fields = list(
     Title = "This is Tori's Final Exam Study Package",
-    Description = "Use this package to study for my developer exam.",
+    Description = "Use this package to study for my developer exam. IT is super cool!",
     `Authors@R` = c(
       person("Victoria", "Aroworade", email = "victoria.aroworade@finddx.org", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1565-9313")),
       person(given = "FIND", role = "cph")
@@ -104,5 +104,7 @@ pkgdown::build_site()
 
 # build the tar.gz with vignettes to share with others
 devtools::build(vignettes = TRUE)
+
 ```
+
 
