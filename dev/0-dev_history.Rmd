@@ -104,5 +104,6 @@ pkgdown::build_site()
 
 # build the tar.gz with vignettes to share with others
 devtools::build(vignettes = TRUE)
+devtools::build_vignettes()
 ```
 
