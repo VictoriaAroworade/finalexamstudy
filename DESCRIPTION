@@ -6,7 +6,8 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-1565-9313")),
     person("FIND", role = "cph")
   )
-Description: Use this package to study for my developer exam.
+Description: Use this package to study for my developer exam. It is really
+cool!
 License: MIT + file LICENSE
 Depends: 
     R (>= 2.10)
