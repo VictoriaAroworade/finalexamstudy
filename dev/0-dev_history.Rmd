@@ -96,6 +96,9 @@ attachment::att_amend_desc()
 
 # Check the package
 devtools::check()
+
+# Run tests
+devtools::test()
 ```
 
 # Share the package
