@@ -116,10 +116,15 @@ devtools::build(vignettes = TRUE)
 # Add Data To Package
 
 ```{r}
-# Add raw data to be prepared
+# Add raw data to be prepared and create data-raw/ folder at root of package
 usethis::use_data_raw()
 
-#Add an internal dataset
+#Add an internal dataset that users can load in data/ folder.
+# Store the dataset as an object in dataset.R file 
+# Add the dataset object you added in the dataset.R file and use the code below to load it
+# Add overwrite = TRUE, to update dataset if you ever make any changes
+# rda created users can load as we load in pacages data(my_dataset)
 usethis::use_data()
+#usethis::use_data("my_dataset, overwrite = TRUE)
 ```
 
