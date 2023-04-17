@@ -36,6 +36,9 @@ usethis::use_git()
 usethis::git_vaccinate()
 # Use main for primary branch
 usethis::git_default_branch_rename()
+
+# Select all checkboxes in Git Macbook
+# Cmd + A + Space
 ```
 
 # Set extra sources of documentation
