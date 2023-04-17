@@ -2,3 +2,4 @@
 
 export(minus_function)
 export(sum_function)
+export(times_two_function)

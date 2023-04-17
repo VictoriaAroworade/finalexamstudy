@@ -1,15 +1,21 @@
 Package: finalexamstudy
-Version: 0.0.0.9000
 Title: This Is Tori's Final Exam Study Package
-Description: Use this package to study for my developer exam. IT is super cool!.
-Authors@R: c(person(given = "Victoria",
-         family = "Aroworade",
-         role = c("aut", "cre"),
-         email = "victoria.aroworade@finddx.org",
-         comment = c(ORCID = "0000-0002-1565-9313")),
-  person(given = "FIND",
-         role = "cph"))
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a license
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Victoria", "Aroworade", , "victoria.aroworade@finddx.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1565-9313")),
+    person("FIND", role = "cph")
+  )
+Description: Use this package to study for my developer exam. IT is super
+    cool!.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
