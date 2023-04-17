@@ -115,4 +115,11 @@ devtools::build(vignettes = TRUE)
 
 # Add Data To Package
 
+```{r}
+# Add raw data to be prepared
+usethis::use_data_raw()
+
+#Add an internal dataset
+usethis::use_data()
+```
 
