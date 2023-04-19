@@ -1,5 +1,7 @@
 ---
 title: "My Double Function"
+author: "Victoria Aroworade"
+date: "2023-18-04"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{my-double-function}
